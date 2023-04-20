@@ -1,7 +1,7 @@
 {
-  "name": "fontend-specification-doc",
+  "name": "frontend-development-guide",
   "version": "1.0.0",
-  "description": "前端开发技术规范文档",
+  "description": "前端开发指南",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",

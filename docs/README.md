@@ -6,6 +6,9 @@ actions:
   - text: 样式规范
     link: /style-doc/
     type: 'secondary'
+  - text: JavaScript规范
+    link: /javascript-doc/
+    type: 'secondary'
   - text: TypeScript规范
     link: /typescript-doc/
     type: 'secondary'

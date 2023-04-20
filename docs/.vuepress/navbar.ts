@@ -6,6 +6,10 @@ const navbar: NavbarConfig = [
     link: '/style-doc'
   },
   {
+    text: 'JavaScript规范',
+    link: '/javascript-doc'
+  },
+  {
     text: 'TypeScript规范',
     link: '/typescript-doc'
   },

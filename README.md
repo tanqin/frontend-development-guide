@@ -1,4 +1,4 @@
-# 前端规范文档
+# 前端开发指南
 
 环境说明：node 版本需 v14.18.0+ （推荐直接用 node v16 以上或最新 [node LTS 版本](https://nodejs.org/en)）
 

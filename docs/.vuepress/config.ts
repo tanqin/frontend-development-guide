@@ -2,7 +2,8 @@ import { defaultTheme, defineUserConfig } from 'vuepress'
 import navbar from './navbar'
 import sidebar from './sidebar'
 
-const base = '/'
+// 部署站点的基础路径
+const base = '/frontend-development-guide/'
 
 export default defineUserConfig({
   base,

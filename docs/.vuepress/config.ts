@@ -1,4 +1,5 @@
 import { defaultTheme, defineUserConfig } from 'vuepress'
+import { searchPlugin } from '@vuepress/plugin-search'
 import navbar from './navbar'
 import sidebar from './sidebar'
 
@@ -30,5 +31,14 @@ export default defineUserConfig({
       lineNumbers: false
     }
   },
-  plugins: []
+  plugins: [
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '搜索（ctrl + k）'
+        }
+      },
+      hotKeys: ['ctrl', 'k']
+    })
+  ]
 })

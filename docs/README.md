@@ -11,9 +11,11 @@ actions:
     link: /tips-share/ 
     type: 'secondary'
 features:
-  - title: 为什么？
-    details: 为了避免开发的随意性。
-  - title: 干什么？
-    details: 包括编程工具、插件、配置、代码规范等。
+  - title: 实用性
+    details: 保持编码风格统一性，利于团队协作和代码维护。
+  - title: 综合性
+    details: 包括开发所用到的各种工具、插件、配置、规范说明等。
+  - title: 细节性
+    details: 涉及一些开发过程不注意或不了解的编码细节。
 footer: 'Copyright © 2023-present GLORYVIEW'
 ---

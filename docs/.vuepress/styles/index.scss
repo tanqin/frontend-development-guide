@@ -1,5 +1,13 @@
 :root {
-  // brand colors
   --c-brand: #0099ff !important;
   --c-brand-light: rgb(0, 162, 255) !important;
+  --c-tip: #0099ff !important;
+}
+
+.site-name,
+#main-title {
+  background: -webkit-linear-gradient(45deg, #0081ff, #1cbbb4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

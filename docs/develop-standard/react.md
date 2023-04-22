@@ -1,4 +1,8 @@
-# React 开发规范
+# React 规范
+
+## 前提
+
+- React 项目开发要遵循前面提到的样式规范、JavaScript 规范、Typescript 规范。
 
 ## 命名规则
 
@@ -10,13 +14,13 @@
 
 - 组件文件名
 
-如果是组件文件，则使用帕斯卡命名法，如 `MyComponent.jsx`、`MyComponent.tsx`；
+如果是组件文件，则使用大驼峰命名法，如 `MyComponent.jsx`、`MyComponent.tsx`；
 
 如果组件是一个目录，则组件主入口命名为 `index`，如 `index.jsx`、`index.tsx`。
 
 - 自定义组件引用
 
-自定义组件引用时，使用帕斯卡命名法。
+自定义组件引用时，使用大驼峰命名法。
 
 ```tsx
 // ❌ bad

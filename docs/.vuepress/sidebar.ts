@@ -1,16 +1,17 @@
-import { SidebarConfig } from "vuepress";
+import { SidebarConfig } from 'vuepress'
 
 const sidebar: SidebarConfig = {
-  '/develop-tool/': [
+  '/develop-tools/': [
     {
       text: '开发工具',
       children: [
-        '/develop-tool/README.md',
-        '/develop-tool/node-and-npm.md',
-        '/develop-tool/svn.md',
-        '/develop-tool/vscode.md',
-        '/develop-tool/hbuilderx.md',
-        '/develop-tool/weixin-devtools.md'
+        '/develop-tools/README.md',
+        '/develop-tools/node-and-npm.md',
+        '/develop-tools/svn.md',
+        '/develop-tools/vscode.md',
+        '/develop-tools/hbuilderx.md',
+        '/develop-tools/weixin-devtools.md',
+        '/develop-tools/other-tools.md'
       ]
     }
   ],
@@ -31,9 +32,7 @@ const sidebar: SidebarConfig = {
   '/tips-share/': [
     {
       text: '技巧分享',
-      children: [
-        '/tips-share/README.md'
-      ]
+      children: ['/tips-share/README.md']
     }
   ]
 }

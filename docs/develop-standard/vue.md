@@ -4,6 +4,8 @@
 
 - Vue 项目开发要遵循前面提到的样式规范、JavaScript 规范、Typescript 规范。
 
+---
+
 ## 项目命名
 
 - 项目名使用中横线（-）作为分隔符。
@@ -11,12 +13,16 @@
 根据 HTML 和 XML 规范，中横线（-）被定义为有效的标识符字符。而下划线（_）则不是一个有效的标识符字符。
 :::
 
-## 常用搭配词说明
+---
+
+## 常用搭配词
 
 **handle**：`handleClick`、`handleDelete` 表达的都是执行一个事件处理函数，用于按钮点击时事件处理。
 ::: tip 原因：
 约定俗成的命名方法，有助于团队内部协作和提高代码的可维护性。
 :::
+
+---
 
 ## 全局方法
 
@@ -25,7 +31,7 @@
 方便区分全局方法与页面内定义的方法。
 :::
 <CodeGroup>
-  <CodeGroupItem title="【Vue2 + JavaScript】" active>
+  <CodeGroupItem title="【 Vue2 + JavaScript 】" active>
 
 ```javascript
 // @/utils/index.js
@@ -46,7 +52,7 @@ Vue.prototype.$add = add
 ```
 
   </CodeGroupItem>
-  <CodeGroupItem title="【Vue3 + TypeScript】">
+  <CodeGroupItem title="【 Vue3 + TypeScript 】">
 
 ```typescript
 // @/utils/index.ts
@@ -69,12 +75,33 @@ app.config.globalProperties.$add = add
   </CodeGroupItem>
 </CodeGroup>
 
+---
+
 ## 公共组件
 
 - 公共组件统一以 Com 结尾，这里的 Com 可理解为 `common component`。例如 `HeaderCom`。
 :::tip 原因：
 方便区分公共组件与页面组件。
 :::
+
+---
+
+- 公共组件统一放到 `@/components` 目录下，且应该给各个组件创建一个独立的文件夹，文件夹下创建 `index.vue` 作为组件入口。
+:::tip 原因：
+集中管理，方便查找。给组件一个独立的文件夹，对于比较复杂的组件，需要拆分多个页面时，这将很有帮助。
+:::
+
+```js
+// @/components/SearchBox/index.vue
+
+```
+
+- 所有定义的公共组件，都应该在 `@/components/README.md` 文件中编写组件使用说明书。请按照组件名称的字母顺序编写说明书，例如 `HeaderCom` 组件应该在 `SearchBox` 组件之前。
+:::tip 原因：
+编写组件使用说明书方便其他开发人员使用公共组件。
+:::
+
+---
 
 ## API 接口
 
@@ -83,12 +110,16 @@ app.config.globalProperties.$add = add
 集中管理，方便查找。
 :::
 
+---
+
 ## 枚举数据
 
 - 所有枚举定义文件统一放到 `@/enums` 目录下，根据各模块不同进行分组放置。
 :::tip 原因：
 集中管理，方便查找。
 :::
+
+---
 
 ## TypeScript 类型或接口定义
 
@@ -97,9 +128,20 @@ app.config.globalProperties.$add = add
 类型文件单独存放，避免与页面逻辑文件混放造成干扰开发者的情况。使用 `模块名.d.ts` 的命名方式使得使用类型时无需导入，方便快捷。
 :::
 
+---
+
 ## 移除打印
 
 - 请在代码提交前删除页面中所有的 `console` 打印。
 :::tip 原因：
 虽然项目打包后我们一般会去除所有打印信息，但是在开发阶段，console 打印在 devtools 打开的情况下会造成内存泄漏。而且过多的打印信息会有时会干扰到其他开发者调试代码。
+:::
+
+---
+
+## 移除冗余注释
+
+- 如果由于需求变更，原本的一段旧代码不适用时，请删除它，而不是注释它。你或许担心未来这段代码需要重新使用时通过 SVN 查找过于麻烦，我认为你大可不必吝啬这一点查找的时间，并且，大多数情况下你的这一段旧代码再也不会使用，它会一直躺在那。
+:::tip 原因：
+冗余注释增加代码管理成本，导致后续维护者不确定这段旧代码是否重要。
 :::

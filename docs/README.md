@@ -4,7 +4,7 @@ heroImage: /images/logo.svg
 tagline: null
 actions:
   - text: 开发工具
-    link: /develop-tool/
+    link: /develop-tools/
   - text: 开发规范
     link: /develop-standard/
   - text: 技巧分享

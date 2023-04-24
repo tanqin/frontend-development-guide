@@ -14,14 +14,24 @@ NPM 可以为我们提供依赖管理、脚本运行和程序打包等功能，�
 
 ## 如何使用它？
 
-由于在上一章我们已经安装了 NVM，并且使用 NVM 安装了 Node 和 NPM，如果你启动 cmd 并且执行 `node -v` 和 `npm -v` 均能输出对应版本号，那么就说明安装成功了。
+由于在上一节我们已经安装了 NVM，并且使用 NVM 安装了 Node 和 NPM，如果你启动 cmd 并且执行 `node -v` 和 `npm -v` 均能输出对应版本号，那么就说明安装成功了。
 
 ## NPM 全局包
 
-推荐使用 `npm i -g xxx` 命令安装以下全局包：
+请使用 `npm i -g <packageName>` （`<packageName>` 就是包名）命令安装以下推荐的全局包：
+
+---
 
 [@vue/cli](https://cli.vuejs.org/zh/)：Vue 项目开发的脚手架工具。在 Vue3 项目中，我们已经不再需要它，但是如果要构建一个 Vue2 项目，我们依然选用它。
 
+---
+
 [nrm](https://www.npmjs.com/package/nrm)：NPM 镜像源管理工具，允许你在 NPM 镜像源间快速切换。
 
+---
+
 [pnpm](https://pnpm.io/zh/installation)：相比于 NPM，PNPM 是速度更快且更节省磁盘空间的包管理器。
+
+---
+
+你可以使用 `npm ls -g --depth=0` 查看目前已经安装的全局包。

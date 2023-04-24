@@ -4,12 +4,13 @@ const navbar: NavbarConfig = [
   {
     text: '开发工具',
     children: [
-      { text: 'nvm', link: '/develop-tool/', activeMatch: '^/develop-tool/$' },
-      '/develop-tool/node-and-npm.md',
-      '/develop-tool/svn.md',
-      '/develop-tool/vscode.md',
-      '/develop-tool/hbuilderx.md',
-      '/develop-tool/weixin-devtools.md'
+      { text: 'nvm', link: '/develop-tools/', activeMatch: '^/develop-tools/$' },
+      '/develop-tools/node-and-npm.md',
+      '/develop-tools/svn.md',
+      '/develop-tools/vscode.md',
+      '/develop-tools/hbuilderx.md',
+      '/develop-tools/weixin-devtools.md',
+      '/develop-tools/other-tools.md'
     ]
   },
   {

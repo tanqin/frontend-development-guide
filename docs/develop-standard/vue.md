@@ -79,11 +79,6 @@ app.config.globalProperties.$add = add
 
 ## 公共组件
 
-- 公共组件统一以 Com 结尾，这里的 Com 可理解为 `common component`。例如 `HeaderCom`。
-:::tip 原因：
-方便区分公共组件与页面组件。
-:::
-
 ---
 
 - 公共组件统一放到 `@/components` 目录下，且应该给各个组件创建一个独立的文件夹，文件夹下创建 `index.vue` 作为组件入口。
@@ -96,7 +91,7 @@ app.config.globalProperties.$add = add
 
 ```
 
-- 所有定义的公共组件，都应该在 `@/components/README.md` 文件中编写组件使用说明书。请按照组件名称的字母顺序编写说明书，例如 `HeaderCom` 组件应该在 `SearchBox` 组件之前。
+- 所有定义的公共组件，都应该在该组件目录下编写组件使用说明书。
 :::tip 原因：
 编写组件使用说明书方便其他开发人员使用公共组件。
 :::

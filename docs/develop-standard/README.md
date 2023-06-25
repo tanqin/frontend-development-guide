@@ -63,7 +63,7 @@ $primary-color: #f00;
 
 | 顺序 |   属性类别   |                                                                                 属性                                                                                 |
 | :--: | :----------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|  1   |   定位属性   |                                                  display、position、float、z-index、clear、visibility、overflow 等                                                   |
+|  1   |   定位属性   |                                                 position、top、right、bottom、left、z-index、display、justify-content、align-items、float、clear、overflow、overflow-x、overflow-y                                                   |
 |  2   |  盒模型属性  |                   width、height、line-height、margin、padding、border、border-radius、background 系列（background-color、background-image...） 等                    |
 |  3   |   文本属性   | color、font 系列（font-family、font-size、font-style...）、text-align、text-decoration、vertical-align、white-space、break-word、letter-spacing、color-text-align 等 |
 |  4   | 视觉效果属性 |                                                                 box-shadow、text-shadow、opacity 等                                                                  |
@@ -81,63 +81,82 @@ $primary-color: #f00;
 ```css
 /* ✅ good */
 .example {
-  /* 定位属性 */
-  position: absolute;
+  position: relative;
+  top: 10px;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+  z-index: 10;
   display: block;
-  float: right;
-  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  float: left;
   clear: both;
-  visibility: visible;
   overflow: hidden;
-
-  /* 盒模型属性 */
-  width: 100%;
-  height: 200px;
-  line-height: 1.5;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  background-color: #fff;
-  background-image: url('/image.jpg');
-  background-size: cover;
-  background-position: center center;
-
-  /* 文本属性 */
-  color: #333;
-  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  padding: 0;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  width: auto;
+  min-width: 100px;
+  max-width: 500px;
+  height: auto;
+  min-height: 50px;
+  max-height: 300px;
   font-size: 16px;
-  font-style: italic;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-top: none;
+  border-top-style: none;
+  border-top-width: 0;
+  border-top-color: transparent;
+  border-right: 2px dotted #999;
+  border-right-style: dotted;
+  border-right-width: 2px;
+  border-right-color: #999;
+  border-bottom: 3px solid #333;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #333;
+  border-left: none;
+  border-left-style: none;
+  border-left-width: 0;
+  border-left-color: transparent;
+  border-radius: 5px;
   text-align: center;
+  text-justify: inter-word;
+  text-indent: 20px;
+  text-overflow: clip;
   text-decoration: underline;
-  vertical-align: middle;
   white-space: nowrap;
-  word-break: break-all;
-  letter-spacing: 1px;
-
-  /* 视觉效果属性 */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px 1px #ccc;
-  opacity: 0.8;
-
-  /* 变换属性 */
-  transform: translateX(50px);
+  color: #333;
+  background: linear-gradient(#f1f1f1, #ddd);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  background-clip: border-box;
+  opacity: 1;
+  filter: none;
+  list-style: none;
+  outline: none;
+  visibility: visible;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 0 #fff;
+  resize: both;
   transition: all 0.3s ease-in-out;
-
-  /* 其他属性 */
-  content: '';
-  cursor: pointer;
-  animation: slideIn 1s;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
 ```
 
 ---

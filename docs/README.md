@@ -19,3 +19,4 @@ features:
     details: 涉及一些开发过程不注意或不了解的编码细节。
 footer: 'Copyright © 2023-present GLORYVIEW'
 ---
+<HomeTitle title="前端开发指南" />

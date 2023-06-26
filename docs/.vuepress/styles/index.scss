@@ -13,6 +13,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+.hero > img {
+  margin: 2rem auto 0 !important;
+}
+
 //设置滚动条样式 chrome
 ::-webkit-scrollbar {
   /*滚动条整体样式*/

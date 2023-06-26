@@ -19,4 +19,7 @@ features:
     details: 涉及一些开发过程不注意或不了解的编码细节。
 footer: 'Copyright © 2023-present GLORYVIEW'
 ---
+<!-- 由于 vuepress 打包会经过 node 渲染，node 环境下无法访问 document 导致打包失败问题，所以需要包裹一层 <ClientOnly> 。参考：https://vuepress.vuejs.org/zh/guide/using-vue.html -->
+<ClientOnly>
 <HomeTitle title="前端开发指南" />
+</ClientOnly>

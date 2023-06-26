@@ -109,11 +109,9 @@ controls.autoRotateSpeed = 3
 // 设置 3D 标题位置
 function setHomeTitlePosition() {
   // 获取主标题
-  const mainTitle = document.querySelector('.home .hero #main-title') as HTMLTitleElement
+  const mainTitle = document.querySelector('#main-title') as HTMLTitleElement
   // 主标题后添加 3D 首页标题
   mainTitle.insertAdjacentElement('afterend', homeTitleRef.value!)
-  // 隐藏主标题
-  mainTitle.style.display = 'none'
 }
 
 // 更新相机和渲染器参数

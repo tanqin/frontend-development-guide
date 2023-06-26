@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { onMounted, onUnmounted, ref } from 'vue'
+import { withBase } from '@vuepress/client'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'
@@ -26,7 +27,7 @@ const camera = new THREE.PerspectiveCamera(45, undefined, 1, 2000)
 camera.position.set(0, 0, 400)
 
 // 加载环境纹理
-const texture = new THREE.TextureLoader().load('/textures/environment.png')
+const texture = new THREE.TextureLoader().load(withBase('/textures/environment.png'))
 // 以球形方式渲染
 texture.mapping = THREE.EquirectangularReflectionMapping
 // 设置环境贴图
@@ -35,7 +36,7 @@ scene.environment = texture
 // 字体加载器
 const fontLoader = new FontLoader()
 // 加载字体。STXingKai-华文行楷
-fontLoader.load('/fonts/STXingKai.json', font => {
+fontLoader.load(withBase('/fonts/STXingKai.json'), font => {
   // 文字几何体
   const textGeometry = new TextGeometry(props.title, {
     font,

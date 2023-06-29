@@ -2,7 +2,7 @@
 
 ## 前提
 
-- React 项目开发要遵循前面提到的样式规范、JavaScript 规范、Typescript 规范。
+- React 项目开发要遵循前面提到的样式规范、JavaScript 规范、Typescript 规范，且前面提到的 Vue 规范在 React 中依然适用。
 
 ## 命名规则
 

@@ -66,7 +66,7 @@ export function add(num1: number, num2: number) {
   return num1 + num2
 }
 
-// @/main.js
+// @/main.ts
 import { add } from '@/utils/index.ts'
 
 app.config.globalProperties.$add = add
@@ -81,19 +81,21 @@ app.config.globalProperties.$add = add
 
 ---
 
-- 公共组件统一放到 `@/components` 目录下，且应该给各个组件创建一个独立的文件夹，文件夹下创建 `index.vue` 作为组件入口。
-:::tip 原因：
-集中管理，方便查找。给组件一个独立的文件夹，对于比较复杂的组件，需要拆分多个页面时，这将很有帮助。
-:::
+- 公共组件统一放到 `@/components` 目录下，且应该给各个组件创建一个独立的文件夹（文件夹采用大驼峰命名，例如 `SearchBox`），文件夹下创建 `index.vue` 作为组件入口；所有定义的公共组件，都应该在该组件目录下编写组件使用说明书。
 
-```js
-// @/components/SearchBox/index.vue
-
+```shell
+my-project
+├── src
+│    └── components            // 公共组件文件夹
+│    │   └── SearchBox             // 搜索组件
+│    │       └── index.vue             // 组件入口
+│    │       └── README.md             // 组件使用说明书
+│    └── ...
+└── ...
 ```
 
-- 所有定义的公共组件，都应该在该组件目录下编写组件使用说明书。
 :::tip 原因：
-编写组件使用说明书方便其他开发人员使用公共组件。
+集中管理，方便查找。给组件一个独立的文件夹，对于比较复杂的组件，需要拆分多个页面时，这将很有帮助；编写组件使用说明书方便其他开发人员使用公共组件。
 :::
 
 ---
@@ -101,6 +103,19 @@ app.config.globalProperties.$add = add
 ## API 接口
 
 - 所有 API 接口文件统一放到 `@/apis` 目录下，根据各模块不同进行分组放置。
+
+```shell
+my-project
+├── src
+│    └── apis                   // API 接口文件夹
+│    │   └── userManage             // 用户管理
+│    │       └── index.ts               // 接口文件
+│    │   └── menuManage             // 菜单管理
+│    │       └── index.ts               // 接口文件
+│    └── ...
+└── ...
+```
+
 :::tip 原因：
 集中管理，方便查找。
 :::
@@ -109,7 +124,39 @@ app.config.globalProperties.$add = add
 
 ## 枚举数据
 
-- 所有枚举定义文件统一放到 `@/enums` 目录下，根据各模块不同进行分组放置。
+- 所有枚举定义文件统一放到 `@/enums` 目录下，且文件以 `模块名.enum.ts` 的范式命名。
+
+<CodeGroup>
+  <CodeGroupItem title="【 Vue2 + JavaScript 】" active>
+  
+```shell
+my-project
+├── src
+│    └── enums                    // 枚举文件夹
+│    │   └── userManage               // 用户管理
+│    │       └── index.ts                 // 枚举文件
+│    │   └── menuManage               // 菜单管理
+│    │       └── index.ts                 // 枚举文件
+│    └── ...
+└── ...
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="【 Vue3 + TypeScript 】">
+  
+```shell
+my-project
+├── src
+│    └── enums                    // 枚举文件夹
+│    │   └── userManage.enum.ts       // 【用户管理】枚举文件
+│    │   └── menuManage.enum.ts       // 【菜单管理】枚举文件
+│    └── ...
+└── ...
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 :::tip 原因：
 集中管理，方便查找。
 :::
@@ -118,9 +165,41 @@ app.config.globalProperties.$add = add
 
 ## TypeScript 类型或接口定义
 
-- 类型或接口定义文件统一放在 `@/types` 目录下，且以 `模块名.d.ts` 的范式命名。例如：`login.d.ts`。
+- 类型或接口定义文件统一放在 `@/types` 目录下，且文件以 `模块名.type.ts` 的范式命名。
+
+<CodeGroup>
+  <CodeGroupItem title="【 Vue2 + JavaScript 】" active>
+  
+```shell
+my-project
+├── src
+│    └── types                    // 类型文件夹
+│    │   └── userManage               // 用户管理
+│    │       └── index.ts                 // 类型文件
+│    │   └── menuManage               // 菜单管理
+│    │       └── index.ts                 // 类型文件
+│    └── ...
+└── ...
+```
+
+  </CodeGroupItem>
+  <CodeGroupItem title="【 Vue3 + TypeScript 】">
+  
+```shell
+my-project
+├── src
+│    └── types                    // 类型文件夹
+│    │   └── userManage.type.ts       // 【用户管理】类型文件
+│    │   └── menuManage.type.ts       // 【菜单管理】类型文件
+│    └── ...
+└── ...
+```
+
+  </CodeGroupItem>
+</CodeGroup>
+
 :::tip 原因：
-类型文件单独存放，避免与页面逻辑文件混放造成干扰开发者的情况。使用 `模块名.d.ts` 的命名方式使得使用类型时无需导入，方便快捷。
+类型文件单独存放，避免与页面逻辑文件混放造成干扰开发者的情况。
 :::
 
 ---

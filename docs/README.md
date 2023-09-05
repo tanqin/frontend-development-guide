@@ -7,6 +7,9 @@ actions:
     link: /develop-tools/
   - text: 开发规范
     link: /develop-standard/
+  - text: 技术选型
+    link: /choosing-technology/ 
+    type: 'secondary'
   - text: 技巧分享
     link: /tips-share/ 
     type: 'secondary'

@@ -1,0 +1,1 @@
+import{_ as t,p as s,q as o,R as e,t as a}from"./framework-5866ffd3.js";const c={},r=e("h1",{id:"todesk",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#todesk","aria-hidden":"true"},"#"),a(" ToDesk")],-1),d=[r];function n(_,i){return s(),o("div",null,d)}const l=t(c,[["render",n],["__file","todesk.html.vue"]]);export{l as default};

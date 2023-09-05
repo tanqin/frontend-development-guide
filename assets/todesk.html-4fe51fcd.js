@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-5794b970","path":"/develop-tools/todesk.html","title":"ToDesk","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"develop-tools/todesk.md"}');export{e as data};

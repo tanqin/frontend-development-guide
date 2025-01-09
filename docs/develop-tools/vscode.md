@@ -13,6 +13,9 @@
 <PluginIconCom url="https://ms-ceintl.gallerycdn.vsassets.io/extensions/ms-ceintl/vscode-language-pack-zh-hans/1.78.2023041909/1681896361735/Microsoft.VisualStudio.Services.Icons.Default" /> [Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-zh-hans)：中文语言包
 ---
 
+<PluginIconCom url="https://pranaygp.gallerycdn.vsassets.io/extensions/pranaygp/vscode-css-peek/4.4.1/1689036849877/Microsoft.VisualStudio.Services.Icons.Default" /> [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)：按住 Ctrl 点击样式类名直接跳转到样式定义
+---
+
 <PluginIconCom url="https://streetsidesoftware.gallerycdn.vsassets.io/extensions/streetsidesoftware/code-spell-checker/2.20.4/1680519931370/Microsoft.VisualStudio.Services.Icons.Default" /> [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)：英文单词拼写检查
 ---
 
@@ -28,6 +31,9 @@
 <PluginIconCom url="https://dbaeumer.gallerycdn.vsassets.io/extensions/dbaeumer/vscode-eslint/2.4.0/1675676105903/Microsoft.VisualStudio.Services.Icons.Default" /> [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)：代码规范检查工具
 ---
 
+<PluginIconCom url="https://eamodio.gallerycdn.vsassets.io/extensions/eamodio/gitlens/2025.1.813/1736359674756/Microsoft.VisualStudio.Services.Icons.Default" /> [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)：增强内置 Git 功能，提供直观的可视化界面和一系列实用工具
+---
+
 <PluginIconCom url="https://davidanson.gallerycdn.vsassets.io/extensions/davidanson/vscode-markdownlint/0.49.0/1673500187272/Microsoft.VisualStudio.Services.Icons.Default" /> [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)：Markdown 文件样式检查和格式化工具
 ---
 
@@ -40,7 +46,10 @@
 <PluginIconCom url="https://johnstoncode.gallerycdn.vsassets.io/extensions/johnstoncode/svn-scm/2.15.7/1671796596069/Microsoft.VisualStudio.Services.Icons.Default" /> [SVN](https://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm)：版本控制工具
 ---
 
-<PluginIconCom url="https://vue.gallerycdn.vsassets.io/extensions/vue/volar/1.4.2/1682073503198/Microsoft.VisualStudio.Services.Icons.Default" /> [Vue Language Features (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.volar)：Vue 语法支持和代码高亮显示
+<PluginIconCom url="https://octref.gallerycdn.vsassets.io/extensions/octref/vetur/0.37.3/1677130066715/Microsoft.VisualStudio.Services.Icons.Default" /> [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)<Badge type="warning" text="为避免冲突，使用时禁用 Vue - Official" vertical="middle" />：Vue2 语法支持和代码高亮显示
+---
+
+<PluginIconCom url="https://vue.gallerycdn.vsassets.io/extensions/vue/volar/2.2.0/1734984550443/Microsoft.VisualStudio.Services.Icons.Default" /> [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)<Badge type="warning" text="为避免冲突，使用时禁用 Vetur" vertical="middle" />：Vue3 语法支持和代码高亮显示
 ---
 
 <PluginIconCom url="https://vue.gallerycdn.vsassets.io/extensions/vue/vscode-typescript-vue-plugin/1.4.2/1682073519031/Microsoft.VisualStudio.Services.Icons.Default" /> [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin)：Vue 的 TypeScript 支持

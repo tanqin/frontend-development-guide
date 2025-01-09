@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4de4cc8b","path":"/develop-standard/typescript.html","title":"TypeScript 规范","lang":"zh-CN","frontmatter":{},"headers":[{"level":2,"title":"类型或接口定义","slug":"类型或接口定义","link":"#类型或接口定义","children":[]}],"git":{},"filePathRelative":"develop-standard/typescript.md"}');export{e as data};

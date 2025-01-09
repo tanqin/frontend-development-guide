@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-ebd5c936","path":"/develop-tools/weixin-devtools.html","title":"微信开发者工具","lang":"zh-CN","frontmatter":{},"headers":[],"git":{},"filePathRelative":"develop-tools/weixin-devtools.md"}');export{e as data};
